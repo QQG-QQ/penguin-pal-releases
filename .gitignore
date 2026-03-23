@@ -1,0 +1,28 @@
+﻿# Node / frontend
+node_modules/
+dist/
+.vite/
+*.log
+
+# Tauri / Rust build outputs
+src-tauri/target/
+
+# LLVM 本地安装 (whisper-rs 依赖)
+src-tauri/.llvm/
+
+# CMake 本地安装 (whisper-rs 依赖)
+src-tauri/.cmake/
+
+# Ninja 本地安装 (whisper-rs 依赖)
+src-tauri/.ninja/
+
+# Local artifacts and temp
+artifacts/
+*.tmp
+*.temp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

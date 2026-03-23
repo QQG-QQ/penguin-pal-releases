@@ -1,0 +1,28 @@
+{
+  "name": "penguin-pal",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:tauri": "node ./scripts/ensure-codex-runtime.mjs && vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "prepare:codex-runtime": "powershell -ExecutionPolicy Bypass -File .\\scripts\\prepare-embedded-codex-runtime.ps1",
+    "prepare:llvm": "node ./scripts/ensure-llvm.mjs",
+    "tauri": "node ./scripts/tauri-build.mjs",
+    "tauri:dev": "node ./scripts/tauri-build.mjs dev",
+    "tauri:build": "node ./scripts/tauri-build.mjs build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vue-tsc": "^2.0.6"
+  }
+}
