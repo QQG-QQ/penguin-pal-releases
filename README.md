@@ -1,6 +1,7 @@
 # PenguinPal
 
 一个基于 Tauri + Vue + Rust 的 Windows 桌宠助手项目，目标是实现轻量化企鹅形象、语音交互和受控桌面动作执行。
+![Penguin 图标](./penguin/penguin-icon.png)
 
 ## 技术栈
 
